@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+ <head>
+ <title> Użycie fukcji </title>
+ <meta charset="utf-8">
+ </head>
+<body>
+ <div style="color:green;font-size:60px;">
+ <script language="JavaScript">
+ var a=parseFloat(prompt("a=",""));
+ var b=parseFloat(prompt("b=",""));
+ function suma_gie(a, b) {
+ return a + b;
+ }
+ function roznica_gie(a, b) {
+ return a - b;
+ }
+ function mnozenie_gie(a, b) {
+ return a * b;
+ }
+ function kwadrat_a(a) {
+ return a * a;
+ }
+ function kwadrat_b( b) {
+ return b * b;
+ }
+ function reszta_gie(a, b) {
+ return a % b;
+ }
+ document.write("suma="+suma_gie(a,b)+"<br> roznica="+roznica_gie(a,b)+"<br> mnozenie="+mnozenie_gie(a,b)+"<br> kwadrat a="+kwadrat_a(a)+"<br> kwadrat b="+kwadrat_b(b)+"<br> reszta z dzielenia="+reszta_gie(a,b)+"<br>");
+</script>
+</div>
+</body>
+</html>

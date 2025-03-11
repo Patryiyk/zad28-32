@@ -1,0 +1,37 @@
+<textarea>
+<html>
+ <head>
+ <script type="text/javascript">
+function okno_zamknij(){window.close()}
+
+var pociag = {
+jaki_pociag_Gierszewski: 'towarowy',
+ile_wagonow_Gierszewski: 'dziesiec',
+kolor_Gierszewski: 'czerwony',
+pokaz: function ()
+{
+document.write( 'jaki_pociag_Gierszewski: ' + this.jaki_pociag_Gierszewski + '<br>')
+document.write( 'ile_wagonow_Gierszewski: ' + this.ile_wagonow_Gierszewski + '<br>')
+document.write( 'kolor_Gierszewski: ' + this.kolor_Gierszewski + '<br>')
+}
+}
+
+pociag.pokaz();
+</script>
+
+</head>
+<body>
+<br>
+Programowanie obiektowe. <br>
+Obiekt to pociag<br>
+Pola:<br>
+jaki_pociag<br>
+ile_wagonow<br>
+kolor<br>
+metoda: pokaz<br>
+<br>
+<button onclick="okno_zamknij()">zamknij okno</button>
+
+</body>
+</html>
+</textarea>

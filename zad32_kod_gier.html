@@ -1,0 +1,65 @@
+<textarea>
+<html>
+<head>
+<script type="text/javascript">
+function okno_zamknij(){window.close();
+        }
+
+        function Pociag(jaki_pociag, ile_wagonow, kolor) {
+            this.jaki_pociag = jaki_pociag;
+            this.ile_wagonow = ile_wagonow;
+            this.kolor = kolor;
+        }
+
+        Pociag.prototype.pokaz = function () {
+            document.body.innerHTML =
+                '<h2>Obiekt: pociag</h2>' +
+                '<p>Pola:</p>' +
+                '<p>jaki_pociag: ' + this.jaki_pociag + '</p>' +
+                '<p>ile_wagonow: ' + this.ile_wagonow + '</p>' +
+                '<p>kolor: ' + this.kolor + '</p>' +
+                '<button onclick="wrocNaGlowna()">Wróć na główną</button>';
+        };
+
+        var pociag1 = new Pociag('InterCity', 'piec', 'niebieski');
+        var pociag2 = new Pociag('PolRegio', 'trzy', 'srebny');
+        var pociag3 = new Pociag('TLK', 'osiem', 'czarny');
+
+        Pociag.prototype.ile_siedzen = '20';
+        Pociag.prototype.pociag_pokaz_Gierszewski = function () {
+            document.body.innerHTML =
+                '<h2>Nowe Pole</h2>' +
+                '<p>Nowa właściwość: ile_siedzen = ' + this.ile_siedzen + '</p>' +
+                '<button onclick="wrocNaGlowna()">Wróć na główną</button>';
+};
+
+function wrocNaGlowna(){location.reload();
+}
+</script>
+</head>
+<body>
+<br>
+<h2>Programowanie obiektowe</h2>
+<p>Obiekt to pociag</p>
+<p>Pola:</p>
+<ul>
+<li>jaki_pociag</li>
+<li>ile_wagonow</li>
+<li>kolor</li>
+</ul>
+<p>Metoda: pokaz</p>
+<p>Nowe pole: ile_siedzen</p>
+<p>Nowa metoda: pociag_pokaz_Gierszewski()</p>
+<br>
+<button onclick="pociag1.pokaz();">Pokaż obiekt 1</button>
+<button onclick="pociag2.pokaz();">Pokaż obiekt 2</button>
+<button onclick="pociag3.pokaz();">Pokaż obiekt 3</button>
+<button onclick="pociag1.pociag_pokaz_Gierszewski();">Pokaż nowe pole</button>
+
+<br><br>
+<button onclick="okno_zamknij()">Zamknij okno</button>
+<br><br>
+
+</body>
+</html>
+</textarea>

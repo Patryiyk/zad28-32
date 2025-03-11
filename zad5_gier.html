@@ -1,0 +1,38 @@
+<html>
+ <head>
+ <title> Gierszewski 3F</title>
+
+ <script language="JavaScript">
+document.write("Szkielet Zaliczeniowy JavaScript Patryk Gierszewski Klasa 3F".fontcolor("red").bold().fontsize(6)+"<br>");
+ function WinOpen_z3() 
+ {
+window.open("zad3_gier.html","okienko_z3","toolbar=no,directories=no,menubar=no,height=380,width=160,top=200,left=200");
+ }
+function WinOpen_z4() 
+ {
+window.open("zadanie4_gier.html","okienko_z4","toolbar=no,directories=no,menubar=no,height=380,width=160,top=200,left=400");
+ }
+function WinOpen_z2() 
+ {
+window.open("zad2_gier.html","okienko_z2","toolbar=no,directories=no,menubar=no,height=380,width=160,top=200,left=200");
+ }
+function WinOpen_z1() 
+ {
+window.open("zad1_gier.html","okienko_z1","toolbar=no,directories=no,menubar=no,height=380,width=160,top=200,left=200");
+ }
+function okno_zamknij() 
+ {
+ window.close()
+ }
+ </script>
+ </head>
+<body>
+ <form>
+ <input type="button_z3" name="zadanie3" value="zadanie3-Gierszewki" onclick="WinOpen_z3(' ')">
+ <input type="button_z4" name="zadanie4" value="zadanie4-Gierszewsi" onclick="WinOpen_z4(' ')">
+ <input type="button_z2" name="zadanie2" value="zadanie2-Gierszewki" onclick="WinOpen_z2(' ')">
+ <input type="button_z1" name="zadanie1" value="zadanie1-Gierszewki" onclick="WinOpen_z1(' ')">
+ <input type="button" value="zamknij okno" onclick="okno_zamknij()"/>
+ </form>
+</body>
+</html>
